@@ -200,19 +200,40 @@
 //     sum += element;
 //     return sum;
 // }
-// )
+// );
 // console.log(sum);
 
 // Just the Positives
 
-const arr = [1, -3, 44, 0, -2, 3, 2, 6];
-let posArr = [];
+// const arr = [1, -3, 44, 0, -2, 3, 2, 6];
+// let posArr = [];
 
-arr.forEach(function (element) {
-    if (element > 0) {
-        posArr.push(element);
+// arr.forEach(function (element) {
+//     if (element > 0) {
+//         posArr.push(element);
+//     }
+//     return posArr;
+// }
+// );
+// console.log(posArr);
+
+// Matrix Addition
+
+const matrix = [
+    [[2, 4], [3, 4]], 
+    [[5, 2], [3, 1]]
+];
+
+function matrixAdd(arr) {
+    let addedMatrix = [];
+    for (let i = 0; i < arr.length; i ++) {
+        addedMatrix.push([])
+        // console.log(addedMatrix);
+        for (let j = 0; j < addedMatrix.length; j++) {
+            addedMatrix[i].push(Number(j) + Number(j))
+        }
     }
-    return posArr;
+    return addedMatrix;
 }
-)
-console.log(posArr);
+
+console.log(matrixAdd(matrix));
