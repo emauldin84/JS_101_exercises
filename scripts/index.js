@@ -172,3 +172,47 @@
 // }
 // console.log(leetspeak('Firey Grill Set'));
 
+// Long-long Vowels
+// function extendVowels(string) {
+//     let newString = '';
+//     for (let i = 0; i < string.length; i++) {
+//         if ((i + 1) < string.length) {
+//             if (string[i] === string[i+1]) {
+//                 newString += string[i].repeat(4);
+//             } else if (i === string.length - 1) {
+//                 newString += string[i];
+//             } else { 
+//                 newString += string[i];
+//             }
+//         } else { 
+//             newString += string[i];
+//         }
+//     }
+//     return newString
+// }
+
+// console.log(extendVowels("Duude"));
+
+// Sum the Numbers
+// const arr = [1, 12, 8];
+// let sum = 0;
+// arr.forEach(function (element) {
+//     sum += element;
+//     return sum;
+// }
+// )
+// console.log(sum);
+
+// Just the Positives
+
+const arr = [1, -3, 44, 0, -2, 3, 2, 6];
+let posArr = [];
+
+arr.forEach(function (element) {
+    if (element > 0) {
+        posArr.push(element);
+    }
+    return posArr;
+}
+)
+console.log(posArr);
